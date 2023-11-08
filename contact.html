@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <link href="contact.css" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bloom Petals - Contact</title>
+</head>
+
+<body>
+    <header>
+        <div id="headerlinkdiv">
+            <img src="image/logo.png" width="50" height="50" alt="Logo Bloom Petals">
+            <a class="headerlinks" href="index.html">Accueil</a>
+            <a class="headerlinks" href="entreprise.html">Entreprise</a>
+            <a class="headerlinks" href="realisations.html">Réalisations</a>
+            <a class="headerlinks" href="contact.html">Contact</a>
+        </div>
+        <div id="headersearchdiv">
+            <input type="text" placeholder="Recherche...">
+        </div>
+    </header>
+    <div class="contactnous">
+        <h1>Formulaire de contact</h1>
+    </div>
+
+    <div class="contact-form">
+        <form>
+            <label for="civility">Civilité :</label>
+            <select id="civility" name="civility">
+                <option value="M.">Monsieur</option>
+                <option value="Mme">Madame</option>
+                <option value="autre">je ne veux pas renseigner</option>
+            </select>
+
+            <label for="name">Nom et Prénom :</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="address">Adresse postale :</label>
+            <input type="text" id="address" name="address" required>
+
+            <label for="message">Message :</label>
+            <textarea id="message" name="message" rows="4" cols="50" required></textarea>
+
+            <input type="submit" value="Envoyer">
+        </form>
+    </div>
+    <video id="video-background" autoplay muted loop>
+        <source src="image/rose.mp4" type="video/mp4">
+    </video>
+</body>
+<footer></footer>
+
+</html>

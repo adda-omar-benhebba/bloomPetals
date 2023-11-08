@@ -1,0 +1,134 @@
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 99;
+    font-family: Arial, Helvetica, sans-serif;
+    height: 4em;
+    background: url(image/fond.jpeg);
+    top: 0;
+    left: 0;
+    position: fixed;
+    width: 100%;
+}
+
+#headerlinkdiv {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+}
+
+.headerlinks {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    padding: 1em;
+}
+
+#headersearchdiv {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 1em;
+}
+
+input {
+    overflow: hidden;
+    background-color: rgb(255, 255, 255);
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 1em;
+    border-radius: 0.5em;
+}
+
+body {
+    background: url("image/fond2.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+}
+.equipe {
+    text-align: center;
+    margin: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 100px;
+    color: white;
+}
+
+.employee-container {
+    display: grid;
+    justify-content: space-around;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+}
+.employee {
+    text-align: center;
+    margin: 10px;
+    margin-top: 50px;
+    position: relative;
+}
+.employee img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    transition: transform 0.3s, opacity 0.3s;
+    opacity: 1;
+}
+.employee-name {
+    margin-top: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+.employee-position {
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+.employee p {
+    opacity: 0;
+    margin-top: 10px;
+    background-color: rgba(255, 255, 255, 0.8);
+    color: white;
+    padding: 10px;
+    width: 80%;
+    border-radius: 5px;
+    transition: opacity 0.3s;
+}
+.employee:hover img {
+    transform: scale(1.1);
+}
+.employee:hover p {
+    opacity: 1;
+}
+.instruct {
+    text-align: center;
+    margin: 10px;
+    margin-top: 10px;
+    position: relative;
+    z-index: 1;
+}
+
+.instruct h1 {
+    display: block;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 100%;
+    margin-top: 220px;
+    text-align: center;
+    margin: 10px;
+    margin-top: 200px;
+    position: relative;
+    z-index: 1;
+}
+#video-background {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+* {
+    margin: 0;
+}
